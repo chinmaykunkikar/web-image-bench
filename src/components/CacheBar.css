@@ -1,0 +1,35 @@
+.cache-bar {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 48px;
+  padding: 16px 24px;
+  background: white;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.cache-info {
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-family: "Inter", sans-serif;
+  background: var(--bg-subtle);
+  padding: 6px 12px;
+  border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+  .cache-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .cache-info {
+    margin-left: 0;
+    text-align: center;
+  }
+}
